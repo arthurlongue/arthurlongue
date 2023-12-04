@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Arthur</h1>
 <h3 align="center">A passionate frontend developer from Brazil</h3>
 
-- 🌱 I’m currently learning **React, TypeScript, MongoDB, SQL at OneBitCode**
+- 🌱 I’m currently learning **React, TypeScript at OneBitCode**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
