@@ -27,7 +27,6 @@ galaxy_arms:
     color: "synapse_cyan"
     items:
       - "Node.js"
-      - "Python"
       - "PostgreSQL"
   - name: "Infrastructure"
     color: "axon_amber"
@@ -62,4 +61,5 @@ languages:
     - "CSS"
     - "Shell"
     - "Makefile"
+    - "Python"
   max_display: 8
