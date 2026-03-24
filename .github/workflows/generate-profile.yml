@@ -39,10 +39,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          stash_count_before=$(git stash list | wc -l)
           git stash -- assets/generated/
           git fetch origin main
           git rebase origin/main
-          if git stash list | grep -q .; then
+          stash_count_after=$(git stash list | wc -l)
+          if [ "$stash_count_after" -gt "$stash_count_before" ]; then
             git stash pop
           fi
           git add assets/generated/
