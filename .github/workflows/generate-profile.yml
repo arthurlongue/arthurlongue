@@ -42,7 +42,9 @@ jobs:
           git stash -- assets/generated/
           git fetch origin main
           git rebase origin/main
-          git stash pop
+          if git stash list | grep -q .; then
+            git stash pop
+          fi
           git add assets/generated/
           if ! git diff --staged --quiet; then
             git commit -m "chore: update profile SVGs [skip ci]"
